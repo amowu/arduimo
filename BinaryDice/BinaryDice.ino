@@ -37,10 +37,10 @@ void loop()
 
 int guess = 0;
 
+const unsigned int DEBOUNCE_DELAY = 20;
+
 Bounce start_button(START_BUTTON_PIN, DEBOUNCE_DELAY);
 Bounce guess_button(GUESS_BUTTON_PIN, DEBOUNCE_DELAY);
-
-const unsigned int DEBOUNCE_DELAY = 20;
 
 void handleGuessButton()
 {
